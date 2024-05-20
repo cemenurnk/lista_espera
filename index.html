@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Turnos</title>
+</head>
+<body>
+  <header class="encabezado">
+    <img id="logo" src="https://sievert-media-server.onrender.com\imagenes\logo.png" alt="cemenurnk">
+    <span class="encabezado__hora"></span>
+    <div class="encabezado__maquinas">
+      <div class="maquinas__maquina maquinas__maquina-ok">AC 1</div>
+      <div class="maquinas__maquina maquinas__maquina-error">AC 2</div>
+      <div class="maquinas__maquina maquinas__maquina-ok">CT</div>
+    </div>
+    <div class="encabezado__clima">
+    </div>
+  </header>
+  <div class="contenedor">
+    <div class="contenedor__izquierdo">
+      <div class="tarjeta tarjeta-grande tarjeta-llamado">
+        <span class="tarjeta__horario">9:45</span> <!-- Hora del turno -->
+        <span class="tarjeta__paciente">Fulano de tal</span>
+      </div>
+      <div class="video">
+        <video id="video-player"></video>
+      </div>
+    </div>
+    <div class="contenedor__derecho">
+      <div class="tarjeta tarjeta-grande tarjeta-ubicacion">
+        <span>Consultorio 1</span>
+      </div>
+      <div class="tarjeta">
+        <span class="tarjeta__horario">9:45</span> <!-- Hora del turno -->
+        <span class="tarjeta__paciente">Fulano de tal</span>
+      </div>
+      <div class="tarjeta">
+        <span class="tarjeta__horario">9:45</span> <!-- Hora del turno -->
+        <span class="tarjeta__paciente">Fulano de tal</span>
+      </div>
+      <div class="tarjeta">
+        <span class="tarjeta__horario">9:45</span> <!-- Hora del turno -->
+        <span class="tarjeta__paciente">Fulano de tal</span>
+      </div>
+      <div class="tarjeta">
+        <span class="tarjeta__horario">9:45</span> <!-- Hora del turno -->
+        <span class="tarjeta__paciente">Fulano de tal</span>
+      </div>
+      <div class="tarjeta">
+        <span class="tarjeta__horario">9:45</span> <!-- Hora del turno -->
+        <span class="tarjeta__paciente">Fulano de tal</span>
+      </div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

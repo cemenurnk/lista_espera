@@ -1,0 +1,106 @@
+:root{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: sans-serif;
+  background: linear-gradient(to right,#14191D, #597483);
+}
+
+.encabezado{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.encabezado__hora{
+
+}
+
+.encabezado__clima{
+  display: flex;
+  align-items: center;
+}
+
+.clima__imagen{
+  width: 200px;
+}
+
+.clima__temperatura{
+  margin-right: 20px;
+}
+
+.encabezado__maquinas{
+  display: flex;
+  gap: 20px;
+}
+
+.maquinas__maquina{
+  width: 200px; 
+  padding: 5px;
+  border-radius: 5px; 
+  text-align: center;
+}
+
+.maquinas__maquina-ok{
+  background-color: green;
+}
+
+.maquinas__maquina-error{
+  background-color: red;
+}
+
+#logo{
+  width: 350px;
+}
+
+.contenedor{
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  grid-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.video{
+  width: 100%;
+  padding-bottom: 56.25%; /* Relación 16:9 para video*/
+  position: relative;
+  background-color: black;
+}
+
+#video-player{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.tarjeta{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.tarjeta-grande{
+  font-size: 100px;
+}
+
+.tarjeta-llamado, .tarjeta-ubicacion{
+  color: #fff;
+} 
+
+.tarjeta-llamado{
+  background-color: rgb(66, 126, 163);
+}
+
+.tarjeta-ubicacion{
+  background-color: orange;
+}
