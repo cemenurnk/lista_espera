@@ -60,13 +60,13 @@
 .contenedor{
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
-  grid-gap: 20px;
+  grid-gap: 10px;
   margin-bottom: 20px;
 }
 
 .video{
   width: 100%;
-  padding-bottom: 56.25%; /* Relación 16:9 para video*/
+  padding-bottom: 56.25%; /* Relaci�n 16:9 para video*/
   position: relative;
   background-color: black;
 }
@@ -89,13 +89,10 @@
   font-weight: bold;
 }
 
-.tarjeta-grande{
-  font-size: 100px;
-}
-
 .tarjeta-llamado, .tarjeta-ubicacion{
   color: #fff;
-} 
+  height: 140px;
+}
 
 .tarjeta-llamado{
   background-color: rgb(66, 126, 163);
@@ -103,4 +100,101 @@
 
 .tarjeta-ubicacion{
   background-color: orange;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal__tarjeta {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  /*justify-content: space-between;*/
+}
+
+.tarjeta__gif{
+	width: 450px;
+	height: 450px;
+}
+
+.tarjeta__llamado{
+	display: flex;
+	flex-direction: column;
+	/*align-items: center;
+	justify-content: center;
+	background-color: orange;*/
+	padding: 20px;
+	/*color: white;*/
+	font-weight: bold;
+	font-size: 120px;
+	animation: blinker 0.5s linear infinite;
+}
+
+.llamado__paciente{
+	line-height: 90%;
+}
+
+.llamado__ubicacion{
+	color: orange;
+}
+
+.tarjeta-parpadeo{
+	animation: blinker 0.5s linear infinite;
+}
+
+@keyframes blinker{
+	50%{
+		opacity: 0.3;
+	}
+}
+
+@media (max-width: 1900px){
+  #logo{
+    width: 200px;
+  }
+
+  .encabezado{
+    font-size: 70px;
+    margin-bottom: 10px;
+  }
+
+  .encabezado__maquinas{
+    gap: 5px;
+  }
+
+  .maquinas__maquina{
+    width: 150px;
+  }
+
+  .clima__imagen{
+    width: 100px;
+  }
+
+  .clima__temperatura{
+    margin-right: 0px;
+  }
+
+  .tarjeta{
+    font-size: 40px;
+  }
+
+  .tarjeta-llamado, .tarjeta-ubicacion{
+    font-size: 60px;
+    height: 120px;
+  }
 }
